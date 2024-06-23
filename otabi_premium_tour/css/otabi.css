@@ -1,0 +1,1001 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 嵌入字型設定 */
+@font-face {
+ font-family: JiaoKeShuTi-R;
+ src: url('../fonts/JiaoKeShuTi-ICA-Pror-R-2_0.otf');
+}
+@font-face {
+ font-family: JiaoKeShuTi-ICA-Pro-L-2_0;
+ src: url('../fonts/JiaoKeShuTi-ICA-Pro-L-2_0.otf');
+}
+@font-face {
+ font-family: JiaoKeShuTi-ICA-Pror-M-otf-2;
+ src: url('../fonts/JiaoKeShuTi-ICA-Pror-M-otf-2.otf');
+}
+@font-face {
+ font-family: Friz-Quadrata-Std-Medium_0;
+ src: url('../fonts/Friz-Quadrata-Std-Medium_0.otf');
+}
+@font-face {
+ font-family: YouMingChaoTi-Medium-2;
+ src: url('../fonts/YouMingChaoTi-Medium-2.otf');
+}
+@font-face {
+ font-family: DFNewChuan-W5-WIN-BF-01_1;
+ src: url('../fonts/DFNewChuan-W5-WIN-BF-01_1.woff');
+}
+
+#top{
+	background-color: rgba(82, 82, 82, 0.4);
+}
+.header{
+	border-top: unset;
+}
+.gizle #top {
+    border-bottom: unset;
+}
+/*御之旅次首頁start*/
+
+.all-container{
+	max-width: 1920px;
+	margin: auto;
+}
+
+.otabi-container{	
+	margin-top:45px;
+/*	margin-bottom:80px;*/
+}
+.row-otabi{
+	margin: 0;
+}
+.col-carousel{
+	padding: 0;
+}
+/*首頁輪播大圖*/
+article.container-otabi{
+	padding: 0;
+}
+
+article.container-route{
+	padding: 82px 0 0;
+}
+
+/*品牌描述*/
+.brand_des{
+	border: solid 1px #333;
+	padding: 45px;
+}
+.brand_des h1{
+	color: #001b43;	
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.brand_des .slogan_en{
+	color: #0e5679;
+	font-size: 28px;	
+	letter-spacing: 2px;
+	font-family: Friz-Quadrata-Std-Medium_0;
+}
+.since{
+	color: #cacaca;
+	font-style: italic;
+    font-family: serif;
+    letter-spacing: 2px;
+}
+.brand_des img{
+	margin: 10px auto 20px;
+}
+.brand_des p{
+	font-size: 16px;
+	color: #642b8d;
+	margin-bottom: 15px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.brand_des .otabi-slogan{
+	font-weight: bold;
+	color: #999;
+	font-size: 21px;
+	letter-spacing: 3px;
+	padding: 10px 0 15px 0;
+}
+.brand_des a{
+	display: inline-block;
+	color: #fff;
+    font-size: 21px;
+	letter-spacing: 3px;
+    padding: 6px 70px;
+	margin-top: 25px;
+	font-family: JiaoKeShuTi-R, sans-serif;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_des_button.jpg);
+}
+.brand_des a:hover{
+	color: #fff;
+	cursor: pointer;
+}
+/*產品內容*/
+.otabi-section{
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_bg_product.jpg);
+	padding: 70px 0;
+	margin-bottom: 80px;
+}
+.otabi-eat-section{
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_bg_product.jpg);
+	padding: 0;
+	margin-bottom: 80px;
+}
+.col-pd a{
+	text-decoration: none;
+	display: inline-block;
+}
+.col-pd>img{
+	box-shadow: 5px 5px #0c5474;
+	margin-bottom: 35px;
+}
+.pd-title{
+	 border-bottom: double #0b669d;
+}
+.col-otabi .pd-name-ch{
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.5);
+}
+.col-otabi .pd-name-en{
+	display: inline-block;
+	color: #0b669d;
+	padding-left: 5px;
+}
+.col-otabi h5{
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+}
+.more{
+	color: #fff;
+	text-align: center;
+    padding: 3px;
+	display: block;
+	width: 65px;
+	float: right;
+	z-index: 1;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_des_more.jpg);
+}
+.more::before{
+	right: 36%;
+    content: ' ';
+    width: 60%;
+    position: absolute;
+    height: 11px;	
+    border-bottom: 1px dotted #333;
+}
+
+/*產品特色*/
+.otabi-unique{
+	margin-bottom: 62px;
+    display: block;
+    min-height: 150px;
+}
+.unique{
+	float: left;
+    width: 89%;
+	padding: 0 15px;
+}
+.unique p{
+	text-align: justify;
+}
+.col-unique{
+	padding: 0 50px;	
+}
+.otabi-unique h5{
+	display: inline-block;
+}
+.otabi-unique h5::after{
+	content: ' ';
+    width: 30%;
+    left: 50%;
+    position: absolute;
+    height: 6px;
+    border-bottom: 1px dotted #333;
+}
+.otabi-unique h4{
+	font-weight: bold;
+}
+.japanese{
+	color: #156e9e;
+	float: left;
+	writing-mode: vertical-lr;
+    letter-spacing: 4px;
+	padding-top: 10px;    
+}
+.arrow{
+    float: right;
+    width: 60px;
+    color: #fff;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_des_more.jpg);
+}
+.arrow::before{
+	left: 9%;
+    content: ' ';
+    width: 60%;
+    position: absolute;
+    height: 11px;
+    border-bottom: 1px dotted #333;
+}
+.otabi-season{
+	border-bottom: 1px solid #999;
+	width: 80%;
+	margin: auto;
+}
+.col-season{
+	padding: 80px 0;
+}
+.col-season p{
+	padding-left: 15px;
+}
+.col-season h5{
+	padding-left: 15px;
+}
+.col-season h4, .col-season h5, .col-season p{
+	display: inline-block;
+}
+.otabi-season h4{
+	color: #fff;
+	padding: 5px 25px;
+	background-image: url(/eWeb_gtstour/otabi_premium_tour/images/otabi-icon-season.jpg);
+}
+.season-section{
+	background-position:top;
+	background-repeat:no-repeat;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_line_bg.png);
+}
+/*御之旅次首頁end*/
+
+/*行程頁面start*/
+.otabi-aside{
+	position: relative;
+}
+.otabi-box{
+	position: fixed;
+    top: 20%;
+    right: 0;
+    border: 1px solid #e4e4e4;
+/*    box-shadow: 1px 1px 2px #eaeaea;*/
+}
+.otabi-box a{
+	color: #0b5474;
+	font-size: 16px;
+	display: block;
+    width: 80px;
+    line-height: 42px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color .4s ease, background-color .4s ease, opacity .4s ease;
+    cursor: pointer;
+    border-bottom: 1px solid #e4e4e4;
+}
+.otabi-box .delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.btn-one{
+	display: block;
+/*    height: 42px;*/
+}
+.btn-one:hover, .btn-two:hover, .btn-three:hover, .btn-four:hover, .btn-five:hover, .btn-six:hover {
+    color: #fff;
+    background-color: #156e9e;
+}
+.btn-day{
+	font-family: serif;
+    font-style: italic;
+}
+.container-route{
+	background-repeat: no-repeat;
+	background-position: bottom;
+	min-height: 90vh;
+}
+.container-karatsu{
+	background-attachment: fixed;
+	background-position: bottom;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_premium_route_top02.jpg);
+}
+.container-aso{
+	background-attachment: fixed;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/aso/otabi_aso_top.jpg);
+}
+.route-topic{
+	text-shadow: 1px 1px 5px #7b6f6f;
+    position: relative;
+	padding-top: 3%;
+/*    transform: translateY(-40%);*/
+/*    top: 50%;*/
+}
+.otabi-wheat{
+	font-size: 36px;
+	etter-spacing: 3px;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.otabi-et{
+	font-size: 72px;
+	font-family: JiaoKeShuTi-ICA-Pror-M-otf-2, sans-serif;
+}
+.img-eat{
+	display: inline-block;
+}
+.col-et-p .col-et-notice {
+	font-size: 16px;
+	text-align: right;
+	color:rgb(162, 160, 157);
+}
+.otabi-st{
+	font-size: 72px;
+	font-family: JiaoKeShuTi-ICA-Pror-M-otf-2, sans-serif;
+}
+.route-topic-01{
+	writing-mode: vertical-lr;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.route-topic-01 .kyushu{
+	font-size: 48px;
+	border: solid 2px #fff;
+	border-radius: 10px;
+	padding: 5px 0;
+    margin-bottom: 10px;
+	font-family: DFNewChuan-W5-WIN-BF-01_1;
+}
+.route-topic-01 .otabi-name{
+	font-size: 48px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: JiaoKeShuTi-R;
+}
+.route-topic-01 .otabi-name02{
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: JiaoKeShuTi-R;
+}
+.route-topic-01 img{
+	padding-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.route-topic-02 .subs{
+	font-size: 32px;
+	text-shadow: 1px 1px 6px #767676;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.route-topic-02 .subs-en{
+	font-size: 28px;
+	font-family: Friz-Quadrata-Std-Medium_0;
+}
+.route-topic-02 p{
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 3px;
+	padding-left:40px;
+}
+.navbar-otabi{
+	float: right;
+	margin: 20px 30px 0 0;
+}
+.navbar-otabi a{
+	color: #fff;
+	font-size: 18px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: unset;
+/*    border-bottom: solid 1px #fff;*/
+}
+
+.logo_otabi{
+	margin: auto;
+}
+.wheat{
+	background-image: url(/eWeb_gtstour/otabi_premium_tour/images/otabi_wheat.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 150px;
+	margin-top: 20px;
+	font-family: YouMingChaoTi-Medium-2;	
+}
+.wheat h4{
+	font-size: 28px;
+}
+.wheat-yu{
+	font-size: 16px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.wheat .japan-kyushu{
+	color: #e6a418;
+	font-size: 21px;
+	font-family: Friz-Quadrata-Std-Medium_0;
+}
+.wheat-right{
+	text-align: right;
+}
+.wheat-left{
+	text-align: left;
+}
+.wheat-right, .wheat-left{
+	font-size: 18px;
+	margin-top: 20px;
+	line-height: 40px;
+}
+@media screen and (max-width: 480px){
+.wheat-right, .wheat-left{
+	text-align: center;
+}
+}
+.wheat-right li, .wheat-left li{
+	font-family: YouMingChaoTi-Medium-2;
+}
+.otabi-title{
+/*	border-left: double 4px #666;*/
+	color: #0b5474;
+	font-size: 32px;
+	font-weight: bold;
+}
+.otabi-jp, .otabi-stay-jp{
+	color: #999;
+	font-size: 20px;
+}
+.otabi-food{
+	display: inline-block;
+	letter-spacing: 3px;
+	padding-left: 7px;
+	writing-mode: vertical-lr;
+	font-family: JiaoKeShuTi-M, sans-serif;
+}
+.otabi-vertical, .otabi-jp, .otabi-stay, .otabi-stay-jp{
+	display: inline-block;
+	letter-spacing: 3px;
+	padding-left: 7px;
+	writing-mode: vertical-lr;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.otabi-row{
+	margin-bottom: 80px;
+}
+.row-spe img.no-bg{
+	padding-top: 75px;
+}
+.col-pdf-01 h1{
+	float: left;
+    font-size: 24px;
+	margin: 0;
+	display: inline-block;
+}
+.col-pdf-01 a{
+	color: #fff;
+}
+.col-pdf-02{
+	font-size: 16px;
+}
+.depdate{
+	color: #666;
+	width: 62px;
+    padding: 5px 10px;
+    margin: 10px 5px 0 5px;
+	background-color: rgba(234, 229, 223, 0.6);
+	display: inline-block;
+}
+.date-year{
+	color: #0d5fa9;
+	font-size: 18px;
+	letter-spacing: 1px;
+	display: inline-block;
+	font-weight: bold;
+	font-style: italic;
+}
+.btn-depdate{
+	background-color: #479dcb;
+}
+.row-eat{
+	margin: auto;
+}
+.row-eat img{
+	border-radius: 2px;
+}
+.otabi-route-section{
+	background-color: #041329;
+}
+.otabi-sec-container{
+	padding: 80px 3% 0 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.otabi-eat-container{
+/*	padding: 0 0 50px 10px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-et .otabi-eat{
+	color: rgb(166, 158, 149);
+	position: relative;
+}
+.col-et:before{
+	width: 100%;
+    height: 68px;
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.col-et-p{
+	padding: 20px 0;
+	margin: auto;
+}
+.col-et-p img{
+	margin: auto;
+}
+.col-et-p h4{
+	font-size: 21px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(109, 104, 96);
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.col-et-p p{
+	font-size: 16px;
+	line-height: 24px;
+    letter-spacing: 1px;
+	padding: 10px 20px;
+	color: rgb(109, 104, 96);	
+	font-family: YouMingChaoTi-Medium-2, sans-serif;
+}
+.col-et-02{
+	padding: 0 3%;
+}
+.otabi-stay{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 32px;
+	display: inline-block;	
+/*	border-left: double 4px #fff;*/
+}
+.stay-row{
+	margin: 0;
+}
+.stay-name{
+	margin-top: 5px;
+	color: #e0e0e0;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.stay-jp{
+	color: #e0e0e0;
+	padding-top: 15px;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}
+.col-stay p{
+	color: #e0e0e0;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.stay-special{
+	color: #e0e0e0;
+	font-size: 16px;
+	margin-bottom: 40px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.route-more{
+	color: #fff;
+	border: solid 1px #fff;
+	padding: 3px 25px;
+	display: inline-block;
+}
+.route-more:hover{
+	color: #fff;
+	font-style: italic;
+}
+.route-more:focus{
+	color: #fff;
+}
+.col-flight table{
+	width: 100%;
+	margin-top: 3%;
+	font-size: 16px;
+	text-align: center;
+}
+.col-flight table th{
+	color: #fff;
+	background-color: #156e9e;
+	text-align: center;	
+}
+.col-flight table tbody tr th, .col-flight table tbody tr td {
+	padding: 10px;
+}
+.flight-notice{
+	padding-top: 18px;
+    font-size: 16px;
+	color: #999999;
+}
+.map-title{	
+	color: #0b5474;
+	font-size: 32px;
+	font-family: JiaoKeShuTi-R;
+}
+.col-map p{
+	color: #333;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-top: 30px;
+/*	margin-bottom: 20px;*/
+	font-family: YouMingChaoTi-Medium-2;
+}
+.col-map img{
+	margin-top: 40px;
+}
+.day-row{
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+.row-route-bg{
+	width: 100%;
+    height: 330px;
+	transform: skew(0deg,-8deg);
+    position: absolute;
+	top: -35px;
+    background: #0b5474;
+}
+.row-route-bg-02{
+	width: 100%;
+    height: 330px;
+	transform: skew(0deg,8deg);
+    position: absolute;
+	top: -35px;
+    background: #0b5474;
+}
+.day-title{
+	color: #fff;
+	margin-top: 0px;
+	font-family: JiaoKeShuTi-R;
+}
+.day-title::before{
+	width: 60px;
+    height: 30px;
+	display: inline-block;
+	content:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_icon-route.png);
+}
+.day-route{
+	color: #abbfcf;
+	font-size: 20px;
+	letter-spacing: 3px;
+	line-height:34px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.sentence{
+	color: hsla(0, 0%, 76%, 0.8);
+	font-size: 18px;
+	padding: 15px 55px 0 0;
+/*	quotes: "" """";*/
+}
+.author{
+	color: hsla(0, 0%, 76%, 0.8);
+	font-size: 18px;
+	text-align: center;
+	padding-right: 45px;
+}
+.day-intro{
+	width: 100%;
+	display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+	min-height: 35px;
+	letter-spacing: 3px;
+	padding-bottom: 5px;
+	border-bottom: double #0b669d;
+	font-family: JiaoKeShuTi-ICA-Pro-L-2_0;
+}
+.day-red{
+	color: red;
+}
+.row-day p{
+	color: #999;
+	min-height: 100px;
+	font-size: 17px;
+	line-height: 28px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.day{
+	position: relative;
+}
+.day-odd img{
+	padding-left: 25%;
+	transform: translateY(20%);
+}
+.day-even img{
+	padding-left: 60%;
+	transform: translateY(20%);
+}
+.col-day{
+	min-height: 172px;
+	margin-bottom: 15px;
+/*	width: 200px;*/
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.col-title-odd{
+	padding-top: 30px;
+}
+.col-title-even{
+	padding-top: 65px;
+}
+.day-spe::before{
+	width: 35px;
+    height: 27px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/otabi_icon-route_intro.png);
+}
+.day-food::before{
+	width: 35px;
+    height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/otabi_icon-route_food.png);
+}
+.day-hotel::before{
+	width: 35px;
+    height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/otabi-icon-stay.jpg);
+}
+.icon-eat, .icon-sleep{
+	font-size: 16px;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.icon-eat::before{
+	width: 45px;
+    height: 40px;
+    display: inline-block;
+	vertical-align: middle;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/otabi-icon-eat.jpg);
+}
+.icon-sleep::before{
+	width: 45px;
+    height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/otabi-icon-sleep.jpg);
+}
+.icon-eat span, .icon-sleep span{
+	color: #0c5474;
+	font-family: YouMingChaoTi-Medium-2;
+}
+.icon-notice span{
+	font-size: 16px;
+	color: rgba(154, 154, 154, 0.8);
+}
+.stat{
+	color: #0b5474;
+	font-size: 32px;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	border-bottom: double #0b669d;
+    font-family: JiaoKeShuTi-R, sans-serif;
+}
+.phone-all{
+	display: inline-flex;
+    align-items: center;
+}
+.phone-all:before{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+	content: url(/eWeb_gtstour/otabi_premium_tour/images/telephone.png);
+}
+.phone:before{
+	content: '相關報名資訊或疑問說明：';
+    display: block;
+    color: #acacac;
+    font-size: 15px;
+	text-align: left;
+}
+.row-phone .phone{
+	color: rgb(166, 158, 149);
+	font-size: 18px;
+	padding: 5px 10px;
+	display: inline-block;
+	background-color: rgba(231, 226, 220, 0.7);
+}
+.phone a{
+	color: rgb(166, 158, 149);	
+}
+.section-hr{
+	height: 45px;
+	background-image:url(/eWeb_gtstour/otabi_premium_tour/images/otabi_hr.png);
+}
+.panel-group h4{
+	color: #333;
+	font-size: 21px;
+	padding: 20px;
+	font-family: JiaoKeShuTi-ICA-Pro-L-2_0;	
+}
+.panel-otabi .otabi-heading{
+	background-color:unset;
+	border-color:unset;
+	border-bottom: 1px solid #0b669d;
+}
+.otabi-heading{
+	border-radius: 0;
+}
+.default-otabi{
+	border: none;
+}
+.panel-otabi-body{
+	font-size: 16px;
+	padding: 20px 40px;
+}
+.panel-otabi-body ul li{
+	line-height: 26px;
+	list-style-type: decimal;
+}
+
+/*圖片輪播效果start*/
+.slider_container {
+    width: 100%;
+    position: relative;
+    border-color: #fff;
+    border-bottom-width: 100px;
+}
+.slider_container div {	
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 18s linear infinite;
+            animation: round 18s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+}
+
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+}
+
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+			display: contents;
+}
+/*
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+*/
+/*圖片輪播效果end*/
+@media screen and (max-width: 767px){
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: rgba(82, 82, 82, 0.4);
+}
+}
+
+@media screen and (max-width:480px){
+.btn-depdate {
+    margin-top: 10px;
+}
+.container-karatsu{
+	background-attachment:inherit;
+}
+.container-aso{
+	background-attachment:inherit;
+}
+.otabi-row {
+    margin-bottom: 50px;
+}
+.day-odd img{
+	padding-left: 0;
+	margin: auto;
+    position:relative;
+}
+.day-even img{
+	padding-left: 0;
+	margin: auto;
+    position:relative;
+}
+.otabi-vertical, .otabi-jp, .otabi-stay, .otabi-stay-jp{
+	display: inline-block;
+	letter-spacing: 3px;
+	padding-left: 7px;
+	writing-mode: horizontal-tb;
+	font-family: JiaoKeShuTi-R, sans-serif;
+}	
+.day-row{
+	background-color: #0b5474;
+}
+.route-topic-02 p {
+    padding-left: 0; 
+}
+.route-topic-02 .subs{
+	font-size: 24px;
+}
+.otabi-title{
+	font-size: 30px;
+}
+.col-title-odd, .col-title-even{
+	padding-top: 20px;
+}
+.hotel-row:nth-child(1){
+	margin-bottom: 30px;
+}
+.col-stay>.route-more{
+	margin-bottom: 10px;
+}
+}
